@@ -10,15 +10,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/xu-cheng/texlive-full:latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install TeXLive
-        run: sudo apt-get update && sudo apt-get install -y texlive-full
-
       - name: Compile LaTeX to PDF
-        run: pdflatex -interaction=nonstopmode -output-directory=output resume.tex
+        run: pdflatex -interaction=nonstopmode -output-directory=output main.tex
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
