@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Compile LaTeX to PDF
-        run: pdflatex -interaction=nonstopmode -output-directory=output main.tex
+        run: pdflatex -interaction=nonstopmode -output-directory=. main.tex
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
