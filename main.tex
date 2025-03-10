@@ -1,0 +1,188 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Pratul Muthuraja}} & Email: \href{mailto:}{pratulmuthuraja@gmail.com}\\
+  \href{https://pratulmuthuraja.com}{Portfolio: pratulmuthuraja.com} & Mobile:~~~+91-848-9468-800 \\
+  \href{https://github.com/pratulmuthuraja}{Github: ~~github.com/pratulmuthuraja} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Illinois Insitute of Technology}{Chicago, USA}
+      {Master of Computer Science}{January 2021 - May 2023}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Big Data, Cloud Computing, Software Engineering, Virtual Machines}}}
+    \resumeSubheading
+      {Anna University}{Chennai, India}
+      {Master of Computer Science}{June 2014 - May 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Python, Go, JavaScript, SQL, Bash, HTML/CSS}
+	\resumeSubItem{Frameworks}{~~~~Django, Flask, ReactJS, NodeJS, LAMP, Gatsby}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, NGINX, Helm, Gatsby, Hugo, Jenkins, ChatGPT}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, Web, Mac, AWS, GCP}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Armour Chapter of Triangle}{Chicago, USA}
+    {Web Developer (Volunteer, Full-time)}{November 2023 - November 2024}
+    \resumeItemListStart
+        \resumeItem{Tech Stack}{React.js, Nodejs, Javascript, TailwindCSS, Framer Motion, PostgreSQL.}
+        \resumeItem{Develop Website}
+          {Developed responsive single page application website using Javascript and React.js leveraging TailwindCSS.}
+        \resumeItem{Code Quality}
+          {Ensured code quality and maintenance by writing unit test using Jest.}
+        \resumeItem{Converted Designs}{Collaborated with UI/UX team to create interfaces and converted prototypes to React web pages.}
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Illinois Institute of Technology}{Chicago, USA}
+		{Graduate Student Ambassador (Part-time)}{August 2021 -  December 2022}
+		\resumeItemListStart
+        \resumeItem{Data Analysis}
+          {Managed databases and generated reports on Salesforce; Analyzed prospective student data to improve response
+to Graduate Discover Day event resulting in 19\% growth of incoming graduate students compared to 2020.}
+        \resumeItem{Leadership}
+          {Strong leadership and collaboration skills evidenced by organizing recruitment activities through campus tours,
+student panel, and events for the Graduate Admissions Office showing 37\% better response rate.}
+		\resumeItemListEnd
+
+    \resumeSubheading
+		{Narayana Glass Company}{Madurai, India}
+		{Graduate Student Ambassador (Full-time)}{June 2018 -  December 2020}
+		\resumeItemListStart
+        \resumeItem{Data Analysis}
+          {Managed databases and generated reports on Salesforce; Analyzed prospective student data to improve response
+to Graduate Discover Day event resulting in 19\% growth of incoming graduate students compared to 2020.}
+        \resumeItem{Leadership}
+          {Strong leadership and collaboration skills evidenced by organizing recruitment activities through campus tours,
+student panel, and events for the Graduate Admissions Office showing 37\% better response rate.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Database Performance Analysis Tool}{(Graduate Research Project) Built an automated tool to deploy Cassandra, MongoDB and CouchDB clusters on AWS utilizing Terraform and Python scripts, resulting in a reduction in deployment time by 75\%. Conducted automated rigorous testing in 2, 4, and 8 cluster modes to evaluate performance based on pre-defined
+criteria and recorded results using Matplotlib graphs for Data Visualization. Tech: Python, Cassandra, MongoDB, CouchDB, Terraform.}
+\vspace{2pt}
+\resumeSubItem{Home Lab} {Designed and built a 2 node cluster running Proxmox VE to learn, test, and experiment with self-hosting and server management. Honed automation skills and achieved 50\% reduced reliance on cloud services. Implemented logging and monitoring using Loki and Grafana. Used Open Media Vault to convert HDD array to NAS. Set up remote access through Cloudflared Tunnel and used NGINX proxy manager to act as a reverse proxy. Tech Stack: Proxmox VE, Debian, Docker, Kubernetes, Bash, Loki, Grafana, Cloudflared Tunnel, NGINX.}
+\vspace{2pt}
+\resumeSubItem{Portfolio Website}{Built portfolio website using Gatsby, an opensource static site generator considering its plentiful plugins library, speed, ease of integration, and security to showcase technical skills, experience, personal projects,
+and achievements.  Tech: Gatsby, Javascript, React.js.}
+\vspace{2pt}
+\resumeSubItem{Open-source Contributor - Meshery}{Have been contributing to Meshery, an open-source, cloud-native management plane designed to help with the deployment, operation, and lifecycle management of service meshes and cloud-native infrastructure since March 2025. Tech: Gatsby, React.js, Go.}
+\vspace{2pt}
+\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+% \section{Publications}
+% \resumeSubHeadingListStart
+% \resumeSubItem{Book: Deep Learning on Web (Web Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Django, Python, AWS, GCP, Azure (November '18)}
+% \vspace{2pt}
+% \resumeSubItem{Book: Deep Learning on Mobile Devices (Flutter App Development, Deep Learning)}{Work in Progress book to be published by Packt Publishing in late 2019. Tech: Flutter, Android, Firebase, TensorFlow, Python, Dart (December '18)}
+% \resumeSubHeadingListEnd
+
+% \vspace{-5pt}
+% \section{Volunteer Experience}
+%   \resumeSubHeadingListStart
+% 	\resumeSubheading
+%     {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}
+%     {Conducted online and offline technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+% \vspace{5pt}
+%     % \vspace{10pt}\textbf{\large{Community Experience}}
+%     \resumeSubheading
+%     {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+%     {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+% \resumeSubHeadingListEnd
+
+\end{document}
