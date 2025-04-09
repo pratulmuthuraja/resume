@@ -43,9 +43,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    #1 \vspace{-2pt}
   }
 }
 
@@ -60,6 +60,13 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[1]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -91,18 +98,19 @@
     \resumeSubheading
       {Illinois Insitute of Technology}{Chicago, USA}
       {Master of Computer Science}{January 2021 - May 2023}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Big Data, Cloud Computing, Software Engineering, Virtual Machines}}}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Big Data, Cloud Computing, Software Engineering, Virtual Machines}}}
+    \vspace{-5pt}
     \resumeSubheading
       {Anna University}{Chennai, India}
       {Master of Computer Science}{June 2014 - May 2018}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases}}}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Networking, Databases}}}
     \resumeSubHeadingListEnd
-\vspace{-5pt}
+\vspace{-12pt}
 \section{Skills}
 	\resumeSubHeadingListStart
 	\resumeSubItem{Languages}{~~~~~~Python, Go, JavaScript, SQL, Bash, HTML/CSS, Markdown}
 	\resumeSubItem{Frameworks}{~~~~Django, Flask, ReactJS, NodeJS, LAMP}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, NGINX, Helm, Gatsby, Hugo, Jenkins, ChatGPT}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, NGINX, Helm, Gatsby, Hugo, Jenkins, ChatGPT, \vspace{3pt}\\~~~~~~~~~~~~~~~~~~~~~~Grafana, Loki, Ceph, Prometheus, Ansible}
 	\resumeSubItem{Platforms}{~~~~~~~Linux, Web, Mac, AWS, GCP}
 	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
 
@@ -112,62 +120,71 @@
   \resumeSubHeadingListStart
     \resumeSubheading{Armour Chapter of Triangle}{Chicago, USA}
     {Full-Stack Developer (Volunteer, Full-time)}{November 2023 - November 2024}
+    \resumeSubSubheading{Organization Website}
     \resumeItemListStart
-        \resumeItem{Tech Stack}{React.js, Nodejs, Javascript, TailwindCSS, PostgreSQL.}
-        \resumeItem{Website}
+        \resumeItem{\textbf{Tech Stack:} React.js, Nodejs, Javascript, TailwindCSS, PostgreSQL.}
+        \resumeItem{}
           {Built a full-stack web application to securely manage social and event data for over 200K members.}
-        \resumeItem{Optimize Backend}
+        \resumeItem{}
           {Overhauled backend architecture, optimizing database queries and caching strategies to bring API response times under 100ms while cutting operational costs by 60\%.}
-        \resumeItem{Workflow Efficiency}
+        \resumeItem{}
           {Designed and implemented event-driven batch jobs for real-time notifications and automated task scheduling, improving engagement and workflow efficiency.}
-        \resumeItem{User Interface}
+        \resumeItem{}
           {Led UI/UX development, working closely with stakeholders to create Figma wireframes and translating them into a highly responsive React frontend.}
-        \resumeItem{System Reliability}
+        \resumeItem{}
           {Improved system reliability to 99.99\% uptime by setting up load balancing, auto-scaling, failover mechanisms, and database replication, minimizing downtime and ensuring high availability.}
-        \resumeItem{Observability}
-          {Introduced observability tools (logs, metrics, and traces) to enable proactive monitoring and reduce incident resolution time by 40\%.}
       \resumeItemListEnd
+    \resumeSubSubheading{Private Cloud Infrastructure for Scalable EdTech Delivery}
+    \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} Proxmox VE, Ceph, Kubernetes (k3s), Terraform, Ansible, ArgoCD, Helm, Prometheus, Grafana, Loki, Alertmanager, OpenTelemetry, Vault, WireGuard, Cosign, Trivy}
+        \resumeItem{}{Set up a 3-node Proxmox VE cluster with Ceph storage to run a containerized EdTech platform supporting video lessons and interactive training modules.}
+        \resumeItem{}{Built a CI/CD pipeline using Terraform, Ansible, ArgoCD, Helm, and k3s to streamline deployments of new course content and platform features.}
+        \resumeItem{}{Rolled out a full observability stack with Prometheus, Grafana, Loki, and OpenTelemetry to keep tabs on system health and handle high traffic during academic peaks.}
+        \resumeItem{}{Locked down access for instructors and developers with Vault for secrets management and WireGuard for secure, remote connectivity.}
+        \resumeItem{}{Brought hosting costs down by 60\% while maintaining 99.99\% uptime, freeing up budget for content and engagement initiatives.}
+      \resumeItemListEnd
+    \resumeSubSubheading{Internal Student Grievance \& Feedback Portal}
+    \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} React.js, Node.js, PostgreSQL, TailwindCSS, Framer Motion, Jest.}
+        \resumeItem{}{Led end-to-end development of a secure feedback and grievance portal for university students, enabling real-time issue tracking and reducing resolution time by 40\% through streamlined departmental workflows.}
+        \resumeItem{}{Designed and deployed a role-based web platform using React.js, Node.js, and PostgreSQL, with full support for anonymity, notifications, and searchable case history for admins and faculty.}
+      \resumeItemListEnd
+
     \resumeSubheading
 		{Illinois Institute of Technology}{Chicago, USA}
-		{Graduate Student Ambassador (Part-time)}{August 2021 -  December 2022}
+		{Graduate Student Ambassador (Part-time)}{August 2021 -  December 2022}\vspace{-5pt}
 		\resumeItemListStart
-        \resumeItem{Data Analysis}
-          {Managed databases and generated reports on Salesforce; Analyzed prospective student data to improve response
+        \resumeItem{Managed databases and generated reports on Salesforce; Analyzed prospective student data to improve response
 to Graduate Discover Day event resulting in 19\% growth of incoming graduate students compared to 2020.}
-        \resumeItem{Leadership}
-          {Strong leadership and collaboration skills evidenced by organizing recruitment activities through campus tours,
+        \resumeItem{Strong leadership and collaboration skills evidenced by organizing recruitment activities through campus tours,
 student panel, and events for the Graduate Admissions Office showing 37\% better response rate.}
 		\resumeItemListEnd
-
     \resumeSubheading
 		{Narayana Glass Company}{Madurai, India}
-		{Business Development Manager (Full-time)}{June 2018 -  December 2020}
+		{Business Development Manager (Full-time)}{June 2018 -  December 2020}\vspace{-5pt}
 		\resumeItemListStart
-        \resumeItem{Manager}
-          {Upgraded heavy machinery resulting in increased productivity by 25\% and implemented better safety standards.}
-        \resumeItem{Market Penetration}
-          {Achieved national market penetration resulting in 15\% sales increase and 10\% market value increase.}
+        \resumeItem{Upgraded heavy machinery resulting in increased productivity by 25\% and implemented better safety standards.}
+        \resumeItem{Achieved national market penetration resulting in 15\% sales increase and 10\% market value increase.}
 		\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-\vspace{-5pt}
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Database Performance Analysis Tool}{(Graduate Research Project) Built an automated tool to deploy Cassandra, MongoDB and CouchDB clusters on AWS utilizing Terraform and Python scripts, resulting in a reduction in deployment time by 75\%. Conducted automated rigorous testing in 2, 4, and 8 cluster modes to evaluate performance based on pre-defined
-criteria and recorded results using Matplotlib graphs for Data Visualization. Tech: Python, Cassandra, MongoDB, CouchDB, Terraform.}
-\vspace{2pt}
-\resumeSubItem{Home Lab} {Designed and built a 2 node cluster running Proxmox VE to learn, test, and experiment with self-hosting and server management. Honed automation skills and achieved 50\% reduced reliance on cloud services. Implemented logging and monitoring using Loki and Grafana. Used Open Media Vault to convert HDD array to NAS. Set up remote access through Cloudflared Tunnel and used NGINX proxy manager to act as a reverse proxy. Tech Stack: Proxmox VE, Debian, Docker, Kubernetes, Bash, Loki, Grafana, Cloudflared Tunnel, NGINX.}
-\vspace{2pt}
-\resumeSubItem{Portfolio Website}{Built portfolio website using Hugo, an opensource static site generator considering its fast build times, vast plugins library, speed, ease of integration, and security to showcase technical skills, experience, personal projects,
-and achievements.  Tech: Hugo, Go, Markdown.}
-\vspace{2pt}
-\resumeSubItem{Open-source Contributor - Meshery}{Have been contributing to Meshery, an open-source, cloud-native management plane designed to help with the deployment, operation, and lifecycle management of service meshes and cloud-native infrastructure since March 2025. Tech: Gatsby, React.js, Go.}
-\vspace{2pt}
-\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
+% %-----------PROJECTS-----------------
+% \vspace{-5pt}
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeSubItem{Database Performance Analysis Tool}{(Graduate Research Project) Built an automated tool to deploy Cassandra, MongoDB and CouchDB clusters on AWS utilizing Terraform and Python scripts, resulting in a reduction in deployment time by 75\%. Conducted automated rigorous testing in 2, 4, and 8 cluster modes to evaluate performance based on pre-defined
+% criteria and recorded results using Matplotlib graphs for Data Visualization. Tech: Python, Cassandra, MongoDB, CouchDB, Terraform.}
+% \vspace{2pt}
+% \resumeSubItem{Home Lab} {Designed and built a 2 node cluster running Proxmox VE to learn, test, and experiment with self-hosting and server management. Honed automation skills and achieved 50\% reduced reliance on cloud services. Implemented logging and monitoring using Loki and Grafana. Used Open Media Vault to convert HDD array to NAS. Set up remote access through Cloudflared Tunnel and used NGINX proxy manager to act as a reverse proxy. Tech Stack: Proxmox VE, Debian, Docker, Kubernetes, Bash, Loki, Grafana, Cloudflared Tunnel, NGINX.}
+% \vspace{2pt}
+% \resumeSubItem{Portfolio Website}{Built portfolio website using Hugo, an opensource static site generator considering its fast build times, vast plugins library, speed, ease of integration, and security to showcase technical skills, experience, personal projects,
+% and achievements.  Tech: Hugo, Go, Markdown.}
+% \vspace{2pt}
+% \resumeSubItem{Open-source Contributor - Meshery}{Have been contributing to Meshery, an open-source, cloud-native management plane designed to help with the deployment, operation, and lifecycle management of service meshes and cloud-native infrastructure since March 2025. Tech: Gatsby, React.js, Go.}
+% \vspace{2pt}
+% \resumeSubHeadingListEnd
+% \vspace{-5pt}
 
 % \section{Publications}
 % \resumeSubHeadingListStart
