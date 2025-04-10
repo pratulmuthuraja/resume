@@ -1,8 +1,10 @@
 %------------------------
 % Resume Template
-% Author : Anubhav Singh
-% Github : https://github.com/xprilion
+% Author : Pratul Muthuraja
+% Github : https://github.com/pratulmuthuraja
 % License : MIT
+
+% Based off Anubhav Singh : https://github.com/xprilion
 %------------------------
 
 \documentclass[a4paper,20pt]{article}
@@ -35,6 +37,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4pt}
 
 % Sections formatting
 \titleformat{\section}{
@@ -72,7 +75,7 @@
 
 
 \newcommand{\resumeSubItem}[2]{
-  \begin{tabular*}{0.97\textwidth}{@{}p{3cm}@{\extracolsep{\fill}}p{13cm}@{}}
+  \begin{tabular*}{\textwidth}{@{}p{3cm}@{\extracolsep{\fill}}p{13cm}@{}}
     #1 & #2 \\
   \end{tabular*}
 }
@@ -81,6 +84,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSkillsListStart}{}
+\newcommand{\resumeSkillsListEnd}{\vspace{-5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -111,14 +116,15 @@
     \resumeSubHeadingListEnd
 \vspace{-12pt}
 \section{Skills}
-	\resumeSubHeadingListStart
+    \resumeSkillsListStart
 	\resumeSubItem{Languages}{Python, Go, JavaScript, SQL, Bash, HTML/CSS, Markdown}
 	\resumeSubItem{Frameworks}{Django, Flask, ReactJS, NodeJS, LAMP}
 	\resumeSubItem{Tools}{Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, NGINX, Helm, Gatsby, Hugo, Jenkins, ChatGPT, Grafana, Loki, Ceph, Prometheus, Ansible}
 	\resumeSubItem{Platforms}{Linux, Web, Mac, AWS, GCP}
-	\resumeSubItem{Soft Skill}{Leadership, Event Management, Writing, Public Speaking, Time Management}
+	\resumeSubItem{Soft Skills}{Leadership, Event Management, Writing, Public Speaking, Time Management}
 
-\resumeSubHeadingListEnd
+\resumeSkillsListEnd
+
 \vspace{-5pt}
 \section{Experience}
   \resumeSubHeadingListStart
