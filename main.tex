@@ -71,7 +71,11 @@
 }
 
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\resumeSubItem}[2]{
+  \begin{tabular*}{0.97\textwidth}{@{}p{3cm}@{\extracolsep{\fill}}p{13cm}@{}}
+    #1 & #2 \\
+  \end{tabular*}
+}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -108,11 +112,11 @@
 \vspace{-12pt}
 \section{Skills}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Python, Go, JavaScript, SQL, Bash, HTML/CSS, Markdown}
-	\resumeSubItem{Frameworks}{~~~~Django, Flask, ReactJS, NodeJS, LAMP}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, NGINX, Helm, Gatsby, Hugo, Jenkins, ChatGPT, \vspace{3pt}\\~~~~~~~~~~~~~~~~~~~~~~Grafana, Loki, Ceph, Prometheus, Ansible}
-	\resumeSubItem{Platforms}{~~~~~~~Linux, Web, Mac, AWS, GCP}
-	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+	\resumeSubItem{Languages}{Python, Go, JavaScript, SQL, Bash, HTML/CSS, Markdown}
+	\resumeSubItem{Frameworks}{Django, Flask, ReactJS, NodeJS, LAMP}
+	\resumeSubItem{Tools}{Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite, NGINX, Helm, Gatsby, Hugo, Jenkins, ChatGPT, Grafana, Loki, Ceph, Prometheus, Ansible}
+	\resumeSubItem{Platforms}{Linux, Web, Mac, AWS, GCP}
+	\resumeSubItem{Soft Skill}{Leadership, Event Management, Writing, Public Speaking, Time Management}
 
 \resumeSubHeadingListEnd
 \vspace{-5pt}
