@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  5 OCT 2025 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  17 OCT 2025 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,9 +287,9 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 98
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 136.
+(Font)              <9> on input line 143.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 136.
+(Font)              <6> on input line 143.
 
 
 [1
@@ -309,12 +309,12 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A9097F1C6E6E85ECF2DBFA7B8163BE5C;254.
+(rerunfilecheck)             After:  13B95F4997BD53A9AEBD399D575367C0;332.
  ) 
 Here is how much of TeX's memory you used:
- 9648 strings out of 467748
- 148358 string characters out of 5429049
- 591924 words of memory out of 5000000
+ 9649 strings out of 467748
+ 148367 string characters out of 5429049
+ 593924 words of memory out of 5000000
  38254 multiletter control sequences out of 15000+600000
  632280 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -329,10 +329,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/texlive/texdir/texmf-dist
 s/type1/public/amsfonts/cm/cmsy9.pfb></opt/texlive/texdir/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1000.pfb>
-Output written on output/main.pdf (1 page, 138449 bytes).
+Output written on output/main.pdf (1 page, 139314 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 71 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
